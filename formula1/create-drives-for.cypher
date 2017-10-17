@@ -38,32 +38,32 @@ MATCH(williams:Team {name: 'Williams'})
 MATCH(stroll:Driver {name: 'Lance Stroll'})
 MATCH(massa:Driver {name: 'Felipe Massa'})
 
-CREATE(vettel)-[:DRIVES_FOR]->(ferrari)
-CREATE(raikonnen)-[:DRIVES_FOR]->(ferrari)
+CREATE(vettel)-[:DRIVES_FOR {since: 2015}]->(ferrari)
+CREATE(raikonnen)-[:DRIVES_FOR {since: 2014}]->(ferrari)
 
-CREATE(perez)-[:DRIVES_FOR]->(forceIndia)
-CREATE(ocon)-[:DRIVES_FOR]->(forceIndia)
+CREATE(perez)-[:DRIVES_FOR {since: 2014}]->(forceIndia)
+CREATE(ocon)-[:DRIVES_FOR {since: 2017}]->(forceIndia)
 
-CREATE(grosjean)-[:DRIVES_FOR]->(haas)
-CREATE(magnussen)-[:DRIVES_FOR]->(haas)
+CREATE(grosjean)-[:DRIVES_FOR {since: 2016}]->(haas)
+CREATE(magnussen)-[:DRIVES_FOR {since: 2017}]->(haas)
 
-CREATE(vandoorne)-[:DRIVES_FOR]->(mclaren)
-CREATE(alonso)-[:DRIVES_FOR]->(mclaren)
+CREATE(vandoorne)-[:DRIVES_FOR {since: 2016}]->(mclaren)
+CREATE(alonso)-[:DRIVES_FOR {since : 2015}]->(mclaren)
 
-CREATE(hamilton)-[:DRIVES_FOR]->(mercedes)
-CREATE(bottas)-[:DRIVES_FOR]->(mercedes)
+CREATE(hamilton)-[:DRIVES_FOR {since: 2013}]->(mercedes)
+CREATE(bottas)-[:DRIVES_FOR {since: 2017}]->(mercedes)
 
-CREATE(ricciardo)-[:DRIVES_FOR]->(redBull)
-CREATE(verstappen)-[:DRIVES_FOR]->(redBull)
+CREATE(ricciardo)-[:DRIVES_FOR {since: 2014}]->(redBull)
+CREATE(verstappen)-[:DRIVES_FOR {since: 2016}]->(redBull)
 
-CREATE(hulkenberg)-[:DRIVES_FOR]->(renault)
-CREATE(sainz)-[:DRIVES_FOR]->(renault)
+CREATE(hulkenberg)-[:DRIVES_FOR {since: 2017}]->(renault)
+CREATE(sainz)-[:DRIVES_FOR {since: 2017}]->(renault)
 
-CREATE(ericsson)-[:DRIVES_FOR]->(sauber)
-CREATE(wehrlein)-[:DRIVES_FOR]->(sauber)
+CREATE(ericsson)-[:DRIVES_FOR {since: 2015}]->(sauber)
+CREATE(wehrlein)-[:DRIVES_FOR {since: 2017}]->(sauber)
 
-CREATE(gasly)-[:DRIVES_FOR]->(torroRosso)
-CREATE(kyvat)-[:DRIVES_FOR]->(torroRosso)
+CREATE(gasly)-[:DRIVES_FOR {since: 2017}]->(torroRosso)
+CREATE(kyvat)-[:DRIVES_FOR {since: 2016}]->(torroRosso)
 
-CREATE(stroll)-[:DRIVES_FOR]->(williams)
-CREATE(massa)-[:DRIVES_FOR]->(williams)
+CREATE(stroll)-[:DRIVES_FOR {since: 2017}]->(williams)
+CREATE(massa)-[:DRIVES_FOR {since: 2014}]->(williams)
