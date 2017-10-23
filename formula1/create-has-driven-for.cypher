@@ -77,7 +77,7 @@ CREATE(kyvat)-[:HAS_DRIVEN_FOR {years : [2013,2014]}]->(torroRosso)
 CREATE(kyvat)-[:HAS_DRIVEN_FOR {years : [2015,2016]}]->(redBull)
 
 CREATE(massa)-[:HAS_DRIVEN_FOR {years : [2002,2004,2005]}]->(sauber)
-CREATE(massa)-[:HAS_DRIVEN_FOR {years : [2006,2007,2008,2009,20010,2011,2012,2013]}]->(ferrari)
+CREATE(massa)-[:HAS_DRIVEN_FOR {years : [2006,2007,2008,2009,2010,2011,2012,2013]}]->(ferrari)
 
 
 
